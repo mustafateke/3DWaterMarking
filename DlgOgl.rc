@@ -1,0 +1,221 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+// Generated Help ID header file
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.hm"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\DlgOgl.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\DlgOgl.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About 3D WATERMARK DEMO"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "3D WATERMARK DEMO",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "September 2003\n by Mustafa Teke",IDC_STATIC,40,21,146,
+                    28,0,0,HIDC_STATIC
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_DLGOGL_DIALOG DIALOGEX 0, 0, 570, 342
+STYLE DS_ABSALIGN | DS_MODALFRAME | DS_3DLOOK | DS_CENTER | DS_CENTERMOUSE | 
+    WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "DEMO"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_NOISE,387,58,49,14,ES_AUTOHSCROLL | WS_GROUP
+    DEFPUSHBUTTON   "Add Noise",IDC_BUTTON_ADD_NOISE,387,74,50,14,BS_FLAT | 
+                    WS_GROUP,WS_EX_RTLREADING
+    PUSHBUTTON      "OK",IDOK,509,14,50,14,BS_FLAT
+    CONTROL         "",IDC_OPENGLWIN,"Static",SS_ETCHEDFRAME | SS_SUNKEN,7,4,
+                    354,328,WS_EX_TRANSPARENT
+    LTEXT           "",IDC_MouseCoord,378,228,164,16
+    PUSHBUTTON      "About",IDC_BUTTON2,509,29,50,14,BS_FLAT
+    GROUPBOX        "Information",IDC_STATIC,362,214,204,118
+    CONTROL         "Slider2",IDC_ROTSLIDER2,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,479,191,81,15
+    DEFPUSHBUTTON   "Reset",IDC_BUTTON1,509,74,50,14,BS_FLAT,
+                    WS_EX_RTLREADING
+    CONTROL         "-90                         90",IDC_STATIC,"Static",
+                    SS_SIMPLE | WS_GROUP,485,177,69,8,WS_EX_TRANSPARENT | 
+                    WS_EX_RIGHT
+    LTEXT           "y",IDC_STATIC,473,195,8,8
+    PUSHBUTTON      "File Open",IDC_FILE_OPEN,509,44,50,14,BS_FLAT
+    GROUPBOX        "Menu",IDC_STATIC,363,4,203,205
+    LTEXT           "ROTATION",IDC_STATIC,502,164,38,8
+    PUSHBUTTON      "Object Open",IDC_OBJ_OPEN,509,59,50,14,BS_FLAT
+    DEFPUSHBUTTON   "Watermark",IDC_BUTTON_WATERMARK,387,15,50,14,BS_FLAT,
+                    WS_EX_RTLREADING
+    DEFPUSHBUTTON   "Get Data",IDC_BUTTON_GET_DATA,387,31,50,14,BS_FLAT,
+                    WS_EX_RTLREADING
+    LTEXT           "File Information",IDC_STATIC_FILE_INFO,365,263,196,29
+    LTEXT           "Watermark Results",IDC_STATIC_WAT_RESULT,365,300,196,29
+    DEFPUSHBUTTON   "Zoom Out",IDC_BUTTON_Zoom_Out,387,192,50,14,BS_FLAT,
+                    WS_EX_RTLREADING
+    DEFPUSHBUTTON   "Zoom In",IDC_BUTTON_Zoom_In,387,174,50,14,BS_FLAT | NOT 
+                    WS_TABSTOP,WS_EX_RTLREADING
+    PUSHBUTTON      "Function",IDC_OBJ_Caller,509,88,50,14,BS_FLAT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 50
+    END
+
+    IDD_DLGOGL_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 566
+        VERTGUIDE, 387
+        VERTGUIDE, 402
+        VERTGUIDE, 432
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 335
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About DEMO Program..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Turkish resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_TRK)
+#ifdef _WIN32
+LANGUAGE LANG_TURKISH, SUBLANG_DEFAULT
+#pragma code_page(1254)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CURSOR3             CURSOR  DISCARDABLE     "res\\harrow.cur"
+IDC_CURSOR4             CURSOR  DISCARDABLE     "res\\hmove.cur"
+#endif    // Turkish resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\DlgOgl.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
